@@ -11,6 +11,8 @@ import UIKit
 
 class ViewController: UIViewController, SettingsViewControllerDelegate {
 
+    
+    
     @IBOutlet weak var mode_Button: UIButton!
     @IBOutlet weak var clear_Button: UIButton!
     @IBOutlet weak var calc_Button: UIButton!
@@ -32,9 +34,7 @@ class ViewController: UIViewController, SettingsViewControllerDelegate {
  
     var currentmode: CalculatorMode = CalculatorMode.Length
     
-   // struct ModeSelect {
-   //     static var mode = "Length"
-   // }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,6 +47,7 @@ class ViewController: UIViewController, SettingsViewControllerDelegate {
         self.view.addGestureRecognizer(detectTouch)
         self.toInput.addGestureRecognizer(detectYardsBox)
         self.fromInput.addGestureRecognizer(detectMetersBox)
+        self.view.backgroundColor = BACKGROUND_COLOR
         
     }
 

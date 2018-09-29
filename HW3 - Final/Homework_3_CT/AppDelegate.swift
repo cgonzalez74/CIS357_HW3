@@ -6,15 +6,24 @@
 //  Copyright © 2018 CIS Student. All rights reserved.
 //
 
+let BACKGROUND_COLOR = UIColor.init(red: 0.0431, green: 0.0902, blue: 0.5765, alpha: 1) //Navy
+let FOREGROUND_COLOR = UIColor.init(red: 0.7686, green: 0.6863, blue: 0.0588, alpha: 1) //Gold
+
 import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        let navAppearance = UINavigationBar.appearance()
+        navAppearance.backgroundColor = BACKGROUND_COLOR
+        navAppearance.tintColor = FOREGROUND_COLOR
         // Override point for customization after application launch.
         return true
     }
